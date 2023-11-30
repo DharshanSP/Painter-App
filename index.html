@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    #drawingCanvas {
+      border: 2px solid rgb(0, 0, 0);
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: blue;
+        text-align: center;
+    }
+    #color{
+        text-align: center;
+    }
+ </style>
+</head>
+<body>
+    <div>
+        <h1>Painter</h1>
+    </div>
+    <div id="color">
+    <label for="colorPicker">Color:</label>
+    <input type="color" id="colorPicker" name="colorPicker" value="#000000">
+
+    <label for="brushSizePicker">Brush size:</label>
+    <input type="range" id="brushSizePicker" name="brushSizePicker" min="1" max="50" value="10">
+ </div>
+ <canvas id="drawingCanvas" width="1500" height="600"></canvas>
+ <script src="main.js"></script>
+</body>
+</html>
